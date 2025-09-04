@@ -2,49 +2,65 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Gardaşın Test Sitesi</title>
+    <title>Type For "C"</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
             text-align: center;
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #2c2c2c;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+            border-radius: 10px;
         }
         h1 {
-            color: #333;
+            color: #ffffff;
+            text-shadow: 0 0 10px #000000;
         }
         p {
             font-size: 18px;
-            color: #555;
+            color: #b0b0b0;
         }
         .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             margin: 10px;
-            background-color: #007BFF;
-            color: white;
+            background-color: #ffffff;
+            color: #1a1a1a;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #c8c8c8;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Merhaba Gardaş! Hoş Geldin!</h1>
-        <p>Bu benim deneme sitem, HTML ve CSS öğreniyorum!</p>
-        <a href="about.html" class="button">Hakkımda</a>
+        <h1>Type For "C"</h1>
+        <p>"Type For C" Test amaçları ile açılmış bir sitedir çok ciddiye almadan geçmenizi öneririz.</p>
+        <a href="about.html" class="button">Hakkımızda</a>
         <a href="contact.html" class="button">İletişim</a>
+        <a href="#" onclick="checkCode()" class="button">Gizli Proje</a>
     </div>
+    <script>
+        function checkCode() {
+            let code = prompt("Gizli projeye erişmek için kodu gir gardaş:");
+            if (code === "GARDAŞ123") {
+                window.location.href = "secret.html";
+            } else {
+                alert("Yanlış kod.");
+            }
+        }
+    </script>
 </body>
 </html>
