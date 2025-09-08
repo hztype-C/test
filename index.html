@@ -13,12 +13,13 @@
             text-align: center;
         }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
+            max-width: 1000px;
+            margin: 0px auto;
+            padding: 200px;
             background-color: #2c2c2c;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            border-radius: 0px;
+            position: relative;
         }
         h1 {
             color: #ffffff;
@@ -29,11 +30,12 @@
             color: #b0b0b0;
         }
         .button {
-            display: inline-block;
+            display: block;
+            width: 200px;
             padding: 12px 24px;
             margin: 10px;
             background-color: #ffffff;
-            color: #1a1a1a;
+            color: black;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
@@ -43,13 +45,45 @@
             transform: scale(1.1);
         }
         .about-button:hover {
-            background-color: #ffffff;
-            box-shadow: 0 0 15px rgba(40, 167, 69, 0.7);
+            background-color: #e1ffc9;
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.7);
         }
         .contact-button:hover {
-            background-color: #ffffff;
+            background-color: #fff4b1;
             animation: pulse 1s infinite;
-            box-shadow: 0 0 25px rgba(255, 232, 0, 0.8);
+        }
+        .maker-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 8px 16px;
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .maker-button:hover {
+            background-color: #4e4e4e;
+            box-shadow: 0 0 15 rgba(255, 255, 255, 0.8);
+            transform: scale(1.1);
+        }
+        .maker-info {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            background-color: #000000;
+            padding: 0px;
+            border: 1px solid #ffffff;
+            border-radius: 0px;
+            color: #e0e0e0;
+            font-size: 15px;
+            max-width: 200px;
+        }
+        .maker-button:hover + .maker-info {
+            display: block;
         }
         .button:hover {
             background-color: #c8c8c8;
@@ -57,12 +91,17 @@
         @keyframes pulse{
             0% {transform: scale(1.1); }
             50% {transform: scale(1.15); }
-            100% {transform: scale(1.1); }
+            100% {transform: scale(1.1);}
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <a href="#" class="maker-button">Creator</a>
+        <div class="maker-info">
+            <p>Creator: Hz.Type-C<br>
+            Instagram: @hz_type_c</p>
+            </div>
         <h1>Type For "C"</h1>
         <p>"Type For C" Test amaçları ile açılmış bir sitedir çok ciddiye almadan geçmenizi öneririz.</p>
         <a href="about.html" class="button about-button">Hakkımızda</a>
