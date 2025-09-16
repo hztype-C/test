@@ -1,0 +1,6 @@
+.button {
+    background: linear-gradient(45deg, #007bff, #ff9500);
+}
+.button:hover {
+    background: linear-gradient(45deg, #ff9500, #007bff);
+}
