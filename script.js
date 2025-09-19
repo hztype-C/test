@@ -6,14 +6,3 @@ function checkCode() {
         alert("Wrong code.");
     }
 }
-
-function toggleMakerInfo() {
-    let card = document.getElementById("makerCard");
-    let info = document.getElementById("makerInfo");
-    card.classList.toggle("active");
-    if (card.classList.contains("active")) {
-        info.style.display = "block";
-    } else {
-        info.style.display = "none";
-    }
-}
